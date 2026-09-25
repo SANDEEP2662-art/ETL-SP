@@ -20,7 +20,7 @@ word_counts = (
        .map(lambda word: (word, 1))
        .reduceByKey(lambda a, b: a + b)
 )
-
+word_counts
 # Display results
 for word, count in word_counts.collect():
     print(word, count)
